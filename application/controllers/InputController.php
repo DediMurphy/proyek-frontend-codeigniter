@@ -162,9 +162,9 @@ class InputController extends CI_Controller {
         $response = $this->curl->simple_delete($apiUrl);
 
         if ($response) {
-            $this->session->set_flashdata('message', 'Data proyek berhasil dihapus.');
-        } else {
             $this->session->set_flashdata('error', 'Gagal menghapus data proyek.');
+        } else {
+            $this->session->set_flashdata('message', 'Data proyek berhasil dihapus.');
         }
 
         redirect('ProyekLokasiController/index');
