@@ -38,7 +38,7 @@ class Proyek extends CI_Controller {
             $this->session->set_flashdata('message', 'Data proyek berhasil disimpan.');
         }
 
-        redirect('DashboardController/index');
+        redirect('Dashboard/index');
     }
 
     public function updateProyek($id) {
@@ -68,7 +68,7 @@ class Proyek extends CI_Controller {
             $this->session->set_flashdata('message', 'Data proyek berhasil diperbarui.');
         }
     
-        redirect('DashboardController/index');
+        redirect('Dashboard/index');
     }
 
     public function editProyek($id) {
@@ -95,7 +95,7 @@ class Proyek extends CI_Controller {
             $this->session->set_flashdata('message', 'Data proyek berhasil dihapus.');
         }
 
-        redirect('DashboardController/index');
+        redirect('Dashboard/index');
     }
 
 }

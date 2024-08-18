@@ -36,7 +36,7 @@ class Lokasi extends CI_Controller {
             $this->session->set_flashdata('message', 'Data lokasi berhasil disimpan.');
         }
     
-        redirect('DashboardController/index');
+        redirect('Dashboard/index');
     }
 
     public function updateLokasi($id) {
@@ -62,7 +62,7 @@ class Lokasi extends CI_Controller {
             $this->session->set_flashdata('message', 'Data lokasi berhasil diperbarui.');
         }
     
-        redirect('DashboardController/index');
+        redirect('Dashboard/index');
     }
 
     public function editLokasi($id) {
@@ -89,6 +89,6 @@ class Lokasi extends CI_Controller {
             $this->session->set_flashdata('message', 'Data lokasi berhasil dihapus.');
         } 
     
-        redirect('DashboardController/index');
+        redirect('Dashboard/index');
     }
 }

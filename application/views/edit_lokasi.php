@@ -10,7 +10,7 @@
     <div class="container">
         <h1>Edit Lokasi</h1>
 
-        <form action="<?php echo site_url('InputController/updateLokasi/'.$lokasi['id']); ?>" method="POST">
+        <form action="<?php echo site_url('Lokasi/updateLokasi/'.$lokasi['id']); ?>" method="POST">
             <div class="form-group">
                 <label for="namaLokasi">Nama Lokasi:</label>
                 <input type="text" id="namaLokasi" name="namaLokasi" value="<?php echo $lokasi['namaLokasi']; ?>" required>

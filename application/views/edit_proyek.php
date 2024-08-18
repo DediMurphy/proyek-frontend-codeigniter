@@ -10,7 +10,7 @@
     <div class="container">
         <h1>Edit Proyek</h1>
 
-        <form action="<?php echo site_url('InputController/updateProyek/'.$proyek['id']); ?>" method="POST">
+        <form action="<?php echo site_url('Proyek/updateProyek/'.$proyek['id']); ?>" method="POST">
             <div class="form-group">
                 <label for="namaProyek">Nama Proyek:</label>
                 <input type="text" id="namaProyek" name="namaProyek" value="<?php echo htmlspecialchars($proyek['namaProyek']); ?>" required>
