@@ -1,0 +1,11 @@
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    RewriteBase /proyek/
+
+    # If the file or directory exists, do not run the rewrite rules
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteCond %{REQUEST_FILENAME} !-d
+
+    # Rewrite the request to index.php
+    RewriteRule ^(.*)$ index.php/$1 [L]
+</IfModule>

@@ -1,7 +1,7 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class ProyekLokasiController extends CI_Controller {
+class Dashboard extends CI_Controller {
 
     public function __construct() {
         parent::__construct();
@@ -24,6 +24,6 @@ class ProyekLokasiController extends CI_Controller {
         // Mengirim data ke view
         $data['proyek'] = $proyekData;
         $data['lokasi'] = $lokasiData;
-        $this->load->view('home', $data);
+        $this->load->view('dashboard', $data);
     }
 }

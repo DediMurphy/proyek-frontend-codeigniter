@@ -49,23 +49,23 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 | Examples:	my-controller/index	-> my_controller/index
 |		my-controller/my-method	-> my_controller/my_method
 */
-$route['default_controller'] = 'home';
+$route['default_controller'] = 'ProyekLokasiController';
 $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;
 
 // Rute untuk Proyek
-$route['input-proyek'] = 'InputController/createProyek';
-$route['input-proyek/store'] = 'InputController/storeProyek';
-$route['input-proyek/edit/(:num)'] = 'InputController/editProyek/$1';  
-$route['input-proyek/update/(:num)'] = 'InputController/updateProyek/$1';
-$route['input-proyek/delete/(:num)'] = 'InputController/deleteProyek/$1';
+$route['input-proyek'] = 'Proyek/createProyek';
+$route['input-proyek/store'] = 'Proyek/storeProyek';
+$route['input-proyek/edit/(:num)'] = 'Proyek/editProyek/$1';  
+$route['input-proyek/update/(:num)'] = 'Proyek/updateProyek/$1';
+$route['input-proyek/delete/(:num)'] = 'Proyek/deleteProyek/$1';
 
 // Rute untuk Lokasi
-$route['input-lokasi'] = 'InputController/createLokasi';
-$route['input-lokasi/store'] = 'InputController/storeLokasi';
-$route['input-lokasi/edit/(:num)'] = 'InputController/editLokasi/$1';  
-$route['input-lokasi/update/(:num)'] = 'InputController/updateLokasi/$1';
-$route['input-lokasi/delete/(:num)'] = 'InputController/deleteLokasi/$1';
+$route['input-lokasi'] = 'Lokasi/createLokasi';
+$route['input-lokasi/store'] = 'Lokasi/storeLokasi';
+$route['input-lokasi/edit/(:num)'] = 'Lokasi/editLokasi/$1';  
+$route['input-lokasi/update/(:num)'] = 'Lokasi/updateLokasi/$1';
+$route['input-lokasi/delete/(:num)'] = 'Lokasi/deleteLokasi/$1';
 
 
 
